@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated": "2026-09-20T18:02:01.014Z",
+  "updated": "2026-09-20T18:02:13.098Z",
   "swims": [
     {
       "id": "peaq-may-madness-50-free",
@@ -143,8 +143,8 @@
       "date": "2026-09-17",
       "course": "SCY",
       "splits": [],
-      "place": "",
-      "notes": ""
+      "place": "KOMS",
+      "notes": "relay"
     },
     {
       "id": "user-1789919294597",
