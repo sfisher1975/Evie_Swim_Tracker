@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated": "2026-09-20T15:54:23.235Z",
+  "updated": "2026-09-20T17:11:52.765Z",
   "swims": [
     {
       "id": "peaq-may-madness-50-free",
@@ -182,9 +182,9 @@
   },
   "lists": {
     "courses": [
-      "SCY",
       "LCM",
-      "SCM"
+      "SCM",
+      "SCY"
     ],
     "events": [
       "100 Back",
