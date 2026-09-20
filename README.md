@@ -1,7 +1,10 @@
-# Evie Swim Tracker v13
+Evie Swim Tracker v14
 
-v13 includes goal progress bars, automatic achievement badges, and now shows up to two relevant earned badges directly on each Personal Best card.
+Based on the corrected v13 build.
+- More-page actions restored.
+- Personal Best badge features retained.
+- Goal features retained.
+- Visible app revision updated to v14.
+- New cache name forces devices/GitHub Pages to recognize the update.
 
-Personal Best badge priority: Goal Crusher, Big Drop, Three in a Row, Getting Close, New PB.
-
-The full Badges screen remains under More → Badges.
+This package does not include data/evie-data.json.
