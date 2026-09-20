@@ -1,4 +1,4 @@
-# Evie Swim Tracker v7
+# Evie Swim Tracker v8
 
 GitHub Pages-ready static app with shared GitHub JSON synchronization.
 
@@ -14,3 +14,9 @@ GitHub Pages-ready static app with shared GitHub JSON synchronization.
 - Visible version updated to v7.
 - Includes the v5 calendar picker and v6 swim icon.
 - Initial shared JSON combines the original historical swims with the latest uploaded September backup.
+
+## v8 sync fix
+- Serializes GitHub writes so phone saves cannot overlap.
+- Automatically retries GitHub 409 conflicts after re-reading the latest file/SHA.
+- Stops list seeding from accidentally starting background GitHub writes.
+- Uses GitHub REST API version 2022-11-28.
