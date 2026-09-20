@@ -1,18 +1,16 @@
-# Evie Swim Tracker v5
+# Evie Swim Tracker v7
 
-GitHub Pages-ready static app.
+GitHub Pages-ready static app with shared GitHub JSON synchronization.
 
-## v5 changes
-- More tab reorganized into Goals, Manage Events, Manage Courses, Manage Places, Data & Backup, and Settings.
-- Removed Add Event from More. The quick Add Event button remains beside Evelyn's name on Home.
-- Goals only show when a positive goal time exists. If none exist, the Goals screen shows “No goals set yet”.
-- Event/course/place dropdown choices can be added, edited, and removed.
-- Backup v2 now includes swims, goals, dropdown lists, and swimmer profile.
-- Browser data stays separate from program files, so normal GitHub app updates do not overwrite local saved data.
-- Mobile keeps bottom navigation and full-screen-style modal sheets; desktop uses the left navigation.
+## Shared data
+- `data/evie-data.json` is the shared master data file.
+- On each phone/PC, open **More → GitHub Sync** once and enter the GitHub owner, repository, branch, file path, and a fine-grained token limited to this repository with **Contents: Read and write**.
+- The token is stored only in that browser's localStorage; it is never included in this ZIP or committed to the repository.
+- When data changes, the app first fetches and merges the current GitHub file, then writes the merged copy back.
+- Local browser storage remains as an offline/safety copy. Export Backup is still available.
 
-The supplied `updated-data-backup-2026-09-20.json` is a safety copy of the user's latest exported data and is not auto-imported, so existing browser data is never overwritten by deploying v5.
-
-
-## v5 change
-- Add Event now uses a native calendar/date picker instead of a saved-date dropdown. It defaults to today.
+## v7
+- Shared phone + PC data through GitHub.
+- Visible version updated to v7.
+- Includes the v5 calendar picker and v6 swim icon.
+- Initial shared JSON combines the original historical swims with the latest uploaded September backup.
