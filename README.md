@@ -1,11 +1,13 @@
-# Evie Swim Tracker
+# Evie Swim Tracker v2
 
-GitHub Pages-ready static PWA based on the SW Card Vault layout.
+GitHub Pages-ready swim tracker for Evelyn Fisher / PEAQ.
 
-## Publish
-1. Create a GitHub repository named `evie-swim-tracker`.
-2. Upload all files in this folder to the repository root.
-3. In **Settings → Pages**, set **Deploy from a branch**, branch **main**, folder **/(root)**.
-4. Open the GitHub Pages URL after deployment.
+## v2 changes
+- Removed dashboard Swim Count and Event Count.
+- Add Swim now uses reusable dropdown lists for Meet, Date, Course, Event, and Place.
+- Every dropdown includes **+ Add new…**; new choices are saved in localStorage and reused later.
+- Event selection automatically derives stroke and distance.
+- Time and splits remain typed because they are swim-specific.
+- Added optional Place and Notes fields.
 
-Swims added in the app are stored in browser localStorage. Use **Goals & Tools → Export backup** to save them.
+Upload all files in this folder to the repository root and enable GitHub Pages.
