@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "exported": "2026-09-20T15:54:23.235Z",
+  "swims": [
+    {
+      "id": "user-1789919046705",
+      "event": "50 Free",
+      "stroke": "Freestyle",
+      "distance": 50,
+      "time": "33.83",
+      "seconds": 33.83,
+      "date": "2026-09-01",
+      "course": "SCY",
+      "splits": [],
+      "place": "",
+      "notes": ""
+    },
+    {
+      "id": "user-1789919083622",
+      "event": "200 Free",
+      "stroke": "Freestyle",
+      "distance": 200,
+      "time": "2:41.80",
+      "seconds": 161.8,
+      "date": "2026-09-01",
+      "course": "SCY",
+      "splits": [],
+      "place": "",
+      "notes": ""
+    },
+    {
+      "id": "user-1789919172571",
+      "event": "50 Back",
+      "stroke": "Backstroke",
+      "distance": 50,
+      "time": "47.49",
+      "seconds": 47.49,
+      "date": "2026-09-01",
+      "course": "SCY",
+      "splits": [],
+      "place": "",
+      "notes": ""
+    },
+    {
+      "id": "user-1789919271041",
+      "event": "50 Free",
+      "stroke": "Freestyle",
+      "distance": 50,
+      "time": "33.19",
+      "seconds": 33.19,
+      "date": "2026-09-17",
+      "course": "SCY",
+      "splits": [],
+      "place": "",
+      "notes": ""
+    },
+    {
+      "id": "user-1789919294597",
+      "event": "100 IM",
+      "stroke": "Individual Medley",
+      "distance": 100,
+      "time": "1:26.96",
+      "seconds": 86.96000000000001,
+      "date": "2026-09-17",
+      "course": "SCY",
+      "splits": [],
+      "place": "",
+      "notes": ""
+    },
+    {
+      "id": "user-1789919313896",
+      "event": "50 Fly",
+      "stroke": "Butterfly",
+      "distance": 50,
+      "time": "40.07",
+      "seconds": 40.07,
+      "date": "2026-09-17",
+      "course": "SCY",
+      "splits": [],
+      "place": "",
+      "notes": ""
+    }
+  ],
+  "goals": {
+    "100 IM": 2,
+    "50 Free": 33.99,
+    "50 Breaststroke": 43.99,
+    "50 BR": 43.99,
+    "50 Fly": 36.89
+  }
+}
