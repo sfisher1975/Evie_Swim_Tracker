@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T20:27:11.840Z",
+  "updated": "2026-09-20T20:13:19.757Z",
   "swims": [
     {
       "id": "user-1789919046705",
@@ -510,27 +510,60 @@
     "peaq-may-madness-50-back": "2026-09-20T18:19:21.597Z"
   },
   "goals": {
+    "100 Back": {
+      "personal": null,
+      "B": null,
+      "BB": null,
+      "A": null
+    },
+    "100 Free": {
+      "personal": 74.69,
+      "B": null,
+      "BB": null,
+      "A": null
+    },
     "100 IM": {
       "personal": 85.19,
       "B": 1,
       "BB": 1,
-      "A": 1,
-      "AA": 1
+      "A": 1
+    },
+    "200 Free": {
+      "personal": 162.59,
+      "B": null,
+      "BB": null,
+      "A": null
+    },
+    "200 IM": {
+      "personal": 183.89,
+      "B": null,
+      "BB": null,
+      "A": null
+    },
+    "50 Back": {
+      "personal": 38.79,
+      "B": null,
+      "BB": null,
+      "A": null
+    },
+    "50 Breast": {
+      "personal": 43.99,
+      "B": null,
+      "BB": null,
+      "A": null
+    },
+    "50 Fly": {
+      "personal": 36.89,
+      "B": null,
+      "BB": null,
+      "A": null
     },
     "50 Free": {
       "personal": 33.99,
       "B": 33.99,
       "BB": 31.69,
-      "A": 29.29,
-      "AA": 1
-    },
-    "50 Breaststroke": 43.99,
-    "50 BR": 43.99,
-    "50 Fly": 36.89,
-    "100 Free": 74.69,
-    "50 Back": 38.79,
-    "200 Free": 162.59,
-    "200 IM": 183.89
+      "A": 29.29
+    }
   },
   "lists": {
     "courses": [
@@ -563,5 +596,6 @@
     "name": "Evelyn Fisher",
     "team": "PEAQ",
     "age": 12
-  }
+  },
+  "exported": "2026-09-20T20:13:19.757Z"
 }
