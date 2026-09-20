@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T20:50:12.589Z",
+  "updated": "2026-09-20T20:50:20.362Z",
   "swims": [
     {
       "id": "user-1789919046705",
@@ -511,10 +511,10 @@
   },
   "goals": {
     "100 Back": {
-      "personal": null,
-      "B": null,
-      "BB": null,
-      "A": null
+      "personal": 0,
+      "B": 1,
+      "BB": 0,
+      "A": 0
     },
     "100 Free": {
       "personal": 74.69,
