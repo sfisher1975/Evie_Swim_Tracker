@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T19:28:53.585Z",
+  "updated": "2026-09-20T19:29:48.611Z",
   "swims": [
     {
       "id": "user-1789919046705",
@@ -12,8 +12,8 @@
       "date": "2026-09-01",
       "course": "SCY",
       "splits": [],
-      "place": "",
-      "notes": ""
+      "place": "KOMS",
+      "notes": "relay"
     },
     {
       "id": "user-1789919083622",
@@ -25,7 +25,7 @@
       "date": "2026-09-01",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -38,7 +38,7 @@
       "date": "2026-09-01",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -51,8 +51,8 @@
       "date": "2026-09-17",
       "course": "SCY",
       "splits": [],
-      "place": "",
-      "notes": ""
+      "place": "KOMS",
+      "notes": "relay"
     },
     {
       "id": "user-1789919294597",
@@ -64,7 +64,7 @@
       "date": "2026-09-17",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -77,7 +77,7 @@
       "date": "2026-09-17",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -510,69 +510,15 @@
     "peaq-may-madness-50-back": "2026-09-20T18:19:21.597Z"
   },
   "goals": {
-    "100 IM": {
-      "personal": 60,
-      "B": 74.69,
-      "BB": 69.39,
-      "A": 63.99,
-      "AA": 1
-    },
-    "50 Free": {
-      "personal": 33.99,
-      "B": 33.99,
-      "BB": 31.69,
-      "A": 29.29,
-      "AA": 1
-    },
-    "50 Breaststroke": {
-      "personal": 43.99,
-      "B": 43.99,
-      "BB": 40.89,
-      "A": 37.69,
-      "AA": 1
-    },
-    "50 BR": {
-      "personal": 43.99,
-      "B": 1,
-      "BB": 1,
-      "A": 1,
-      "AA": 1
-    },
-    "50 Fly": {
-      "personal": 33.99,
-      "B": 1,
-      "BB": 1,
-      "A": 1,
-      "AA": 1
-    },
-    "100 Free": {
-      "personal": 74.69,
-      "B": 1,
-      "BB": 1,
-      "A": 1,
-      "AA": 1
-    },
-    "50 Back": {
-      "personal": 38.79,
-      "B": 1,
-      "BB": 1,
-      "A": 1,
-      "AA": 1
-    },
-    "200 Free": {
-      "personal": 162.59,
-      "B": 1,
-      "BB": 1,
-      "A": 1,
-      "AA": 1
-    },
-    "200 IM": {
-      "personal": 183.89,
-      "B": 1,
-      "BB": 1,
-      "A": 1,
-      "AA": 1
-    }
+    "100 IM": 85.19,
+    "50 Free": 33.99,
+    "50 Breaststroke": 43.99,
+    "50 BR": 43.99,
+    "50 Fly": 36.89,
+    "100 Free": 74.69,
+    "50 Back": 38.79,
+    "200 Free": 162.59,
+    "200 IM": 183.89
   },
   "lists": {
     "courses": [
