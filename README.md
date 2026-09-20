@@ -1,13 +1,12 @@
-# Evie Swim Tracker v10
+# Evie Swim Tracker v11
 
-Version 10 fixes shared-data deletion across GitHub-synced devices.
+Changes in v11:
+- Progress chart is chronological left-to-right (oldest to newest).
+- Swim time is the vertical axis; faster times plot lower.
+- Chart shows time-axis labels, date labels, and highlights the PB point.
+- Recent swim cards compare each result with the previous swim in the same event and course: dropped time is green, added time is red.
+- Goals now support B, BB, A, and AA standard times for every event, with automatic achieved checkmarks based on PB.
+- Existing personal goal values are preserved when upgrading.
+- v10 multi-device deletion and GitHub conflict protections are retained.
 
-## v10 changes
-- Deleted swims now create a shared deletion marker (tombstone).
-- A deleted swim cannot be restored accidentally by another device that still has an older local copy.
-- Deletion markers are stored in `data/evie-data.json` during GitHub sync and included in backups.
-- Existing GitHub merge and 409 retry protection remains in place.
-- App header updated to v10.
-
-## Important
-Keep a current backup before updating. GitHub credentials/tokens are not included in this package and remain stored locally in each configured browser/device.
+Important: Do not replace your live `data/evie-data.json` when updating the app. The v11 update ZIP intentionally does not include the data folder.
