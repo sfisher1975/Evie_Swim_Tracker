@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T20:13:19.757Z",
+  "updated": "2026-09-20T20:36:38.795Z",
   "swims": [
     {
       "id": "user-1789919046705",
@@ -548,9 +548,9 @@
     },
     "50 Breast": {
       "personal": 43.99,
-      "B": null,
-      "BB": null,
-      "A": null
+      "B": 0,
+      "BB": 0,
+      "A": 0
     },
     "50 Fly": {
       "personal": 36.89,
@@ -596,6 +596,5 @@
     "name": "Evelyn Fisher",
     "team": "PEAQ",
     "age": 12
-  },
-  "exported": "2026-09-20T20:13:19.757Z"
+  }
 }
