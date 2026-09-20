@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T18:18:48.023Z",
+  "updated": "2026-09-20T18:18:55.193Z",
   "swims": [
     {
       "id": "peaq-may-madness-50-free",
@@ -54,18 +54,6 @@
       "time": "50.01",
       "seconds": 50.01,
       "date": "2026-05-09",
-      "meet": "PEAQ May Madness Invite",
-      "course": "SCY",
-      "splits": []
-    },
-    {
-      "id": "peaq-may-madness-100-back",
-      "event": "100 Back",
-      "stroke": "Backstroke",
-      "distance": 100,
-      "time": "1:51.21",
-      "seconds": 111.21,
-      "date": "2026-05-10",
       "meet": "PEAQ May Madness Invite",
       "course": "SCY",
       "splits": []
@@ -386,7 +374,8 @@
     "user-1789926586465": "2026-09-20T18:14:06.681Z",
     "user-1789923739910": "2026-09-20T18:14:45.400Z",
     "user-1789923331524": "2026-09-20T18:17:14.454Z",
-    "peaq-may-madness-50-fly": "2026-09-20T18:18:47.009Z"
+    "peaq-may-madness-50-fly": "2026-09-20T18:18:47.009Z",
+    "peaq-may-madness-100-back": "2026-09-20T18:18:54.422Z"
   },
   "goals": {
     "100 IM": 85.19,
