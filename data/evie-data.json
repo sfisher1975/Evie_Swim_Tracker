@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T18:25:18.476Z",
+  "updated": "2026-09-20T18:25:20.525Z",
   "swims": [
     {
       "id": "user-1789919046705",
@@ -312,6 +312,19 @@
       "course": "SCY",
       "splits": [],
       "place": "USC",
+      "notes": ""
+    },
+    {
+      "id": "user-1789928719723",
+      "event": "50 Free",
+      "stroke": "Freestyle",
+      "distance": 50,
+      "time": "47.94",
+      "seconds": 47.94,
+      "date": "2024-10-20",
+      "course": "SCY",
+      "splits": [],
+      "place": "NH",
       "notes": ""
     }
   ],
