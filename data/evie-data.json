@@ -1,20 +1,7 @@
 {
   "version": 4,
-  "updated": "2026-09-20T18:19:12.719Z",
+  "updated": "2026-09-20T18:19:18.356Z",
   "swims": [
-    {
-      "id": "peaq-may-madness-50-free",
-      "event": "50 Free",
-      "stroke": "Freestyle",
-      "distance": 50,
-      "time": "39.35",
-      "seconds": 39.35,
-      "date": "2026-05-09",
-      "meet": "PEAQ May Madness Invite",
-      "course": "SCY",
-      "splits": [],
-      "drop": 8.73
-    },
     {
       "id": "peaq-may-madness-50-back",
       "event": "50 Back",
@@ -335,7 +322,8 @@
     "peaq-may-madness-100-back": "2026-09-20T18:18:54.422Z",
     "peaq-may-madness-100-im": "2026-09-20T18:19:00.360Z",
     "peaq-may-madness-200-free": "2026-09-20T18:19:05.727Z",
-    "peaq-may-madness-100-free": "2026-09-20T18:19:11.922Z"
+    "peaq-may-madness-100-free": "2026-09-20T18:19:11.922Z",
+    "peaq-may-madness-50-free": "2026-09-20T18:19:17.534Z"
   },
   "goals": {
     "100 IM": 85.19,
