@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated": "2026-09-20T18:06:16.711Z",
+  "updated": "2026-09-20T18:06:40.769Z",
   "swims": [
     {
       "id": "peaq-may-madness-50-free",
@@ -440,7 +440,8 @@
     "50 BR": 43.99,
     "50 Fly": 36.89,
     "100 Free": 74.69,
-    "50 Back": 38.79
+    "50 Back": 38.79,
+    "200 Free": 162.59
   },
   "lists": {
     "courses": [
