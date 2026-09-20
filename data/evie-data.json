@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated": "2026-09-20T15:54:23.235Z",
+  "updated": "2026-09-20T16:59:30.229Z",
   "swims": [
     {
       "id": "peaq-may-madness-50-free",
@@ -174,17 +174,17 @@
     }
   ],
   "goals": {
-    "100 IM": 2,
+    "100 IM": 60,
     "50 Free": 33.99,
     "50 Breaststroke": 43.99,
     "50 BR": 43.99,
-    "50 Fly": 36.89
+    "50 Fly": 33.99
   },
   "lists": {
     "courses": [
-      "SCY",
       "LCM",
-      "SCM"
+      "SCM",
+      "SCY"
     ],
     "events": [
       "100 Back",
@@ -195,7 +195,9 @@
       "50 Fly",
       "50 Free"
     ],
-    "places": []
+    "places": [
+      "USC"
+    ]
   },
   "profile": {
     "name": "Evelyn Fisher",
