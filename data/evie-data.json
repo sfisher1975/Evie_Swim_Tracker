@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T18:17:29.595Z",
+  "updated": "2026-09-20T18:17:37.343Z",
   "swims": [
     {
       "id": "peaq-may-madness-50-free",
@@ -104,8 +104,8 @@
       "date": "2026-09-01",
       "course": "SCY",
       "splits": [],
-      "place": "",
-      "notes": ""
+      "place": "KOMS",
+      "notes": "relay"
     },
     {
       "id": "user-1789919083622",
@@ -117,7 +117,7 @@
       "date": "2026-09-01",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -130,7 +130,7 @@
       "date": "2026-09-01",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -143,8 +143,8 @@
       "date": "2026-09-17",
       "course": "SCY",
       "splits": [],
-      "place": "",
-      "notes": ""
+      "place": "KOMS",
+      "notes": "relay"
     },
     {
       "id": "user-1789919294597",
@@ -156,7 +156,7 @@
       "date": "2026-09-17",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -169,7 +169,7 @@
       "date": "2026-09-17",
       "course": "SCY",
       "splits": [],
-      "place": "",
+      "place": "KOMS",
       "notes": ""
     },
     {
@@ -400,11 +400,11 @@
     "user-1789923331524": "2026-09-20T18:17:14.454Z"
   },
   "goals": {
-    "100 IM": 60,
+    "100 IM": 85.19,
     "50 Free": 33.99,
     "50 Breaststroke": 43.99,
     "50 BR": 43.99,
-    "50 Fly": 33.99,
+    "50 Fly": 36.89,
     "100 Free": 74.69,
     "50 Back": 38.79,
     "200 Free": 162.59,
