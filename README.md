@@ -20,3 +20,7 @@ GitHub Pages-ready static app with shared GitHub JSON synchronization.
 - Automatically retries GitHub 409 conflicts after re-reading the latest file/SHA.
 - Stops list seeding from accidentally starting background GitHub writes.
 - Uses GitHub REST API version 2022-11-28.
+
+
+## v9
+Added More → Edit Swim Data to edit or delete recorded swim results. Changes recalculate PB/progress and sync through GitHub.
