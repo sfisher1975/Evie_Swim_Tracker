@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updated": "2026-09-20T18:14:35.054Z",
+  "updated": "2026-09-20T18:14:46.096Z",
   "swims": [
     {
       "id": "peaq-may-madness-50-free",
@@ -170,19 +170,6 @@
       "course": "SCY",
       "splits": [],
       "place": "",
-      "notes": ""
-    },
-    {
-      "id": "user-1789923739910",
-      "event": "100 Back",
-      "stroke": "Backstroke",
-      "distance": 100,
-      "time": "1:00",
-      "seconds": 60,
-      "date": "2026-09-18",
-      "course": "SCY",
-      "splits": [],
-      "place": "USC",
       "notes": ""
     },
     {
@@ -421,7 +408,8 @@
     }
   ],
   "deletedSwims": {
-    "user-1789926586465": "2026-09-20T18:14:06.681Z"
+    "user-1789926586465": "2026-09-20T18:14:06.681Z",
+    "user-1789923739910": "2026-09-20T18:14:45.400Z"
   },
   "goals": {
     "100 IM": 2,
