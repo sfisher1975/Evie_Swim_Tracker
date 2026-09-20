@@ -1,6 +1,6 @@
-# Evie Swim Tracker v11
+# Evie Swim Tracker v12
 
-Changes in v11:
+Changes in v12:
 - Progress chart is chronological left-to-right (oldest to newest).
 - Swim time is the vertical axis; faster times plot lower.
 - Chart shows time-axis labels, date labels, and highlights the PB point.
@@ -9,4 +9,6 @@ Changes in v11:
 - Existing personal goal values are preserved when upgrading.
 - v10 multi-device deletion and GitHub conflict protections are retained.
 
-Important: Do not replace your live `data/evie-data.json` when updating the app. The v11 update ZIP intentionally does not include the data folder.
+Important: Do not replace your live `data/evie-data.json` when updating the app. The v12 update ZIP intentionally does not include the data folder.
+
+- Progress graph corrected so slower times are at the top and faster times move downward.
