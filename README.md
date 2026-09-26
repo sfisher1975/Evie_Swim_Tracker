@@ -44,3 +44,8 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 ## v1.17.2
 - Private video playback now downloads the video through the authenticated Storage endpoint and plays it from a local Blob URL.
 - This avoids relying on legacy public URLs or signed-URL playback for existing videos.
+
+
+## v1.17.2.1 Athlete Meet Mode Fix
+- Fixed the Athlete Meet Mode navigation button so Evie can open Meet Mode read-only.
+- No changes to the working private video playback or security permissions.
