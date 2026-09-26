@@ -1,3 +1,5 @@
+Evie Swim Tracker v1.15 - Mobile Progress Sync Fix
+
 Evie Swim Tracker v1.11 - Combined Progress + Times
 
 Evie Swim Tracker v1.00
