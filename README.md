@@ -40,3 +40,7 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Fixed private race-video playback for authenticated Parent and Athlete accounts.
 - Recovers Storage paths from legacy public video URLs and requests fresh signed URLs.
 - Refreshes expired login tokens when signing video URLs.
+
+## v1.17.2
+- Private video playback now downloads the video through the authenticated Storage endpoint and plays it from a local Blob URL.
+- This avoids relying on legacy public URLs or signed-URL playback for existing videos.
