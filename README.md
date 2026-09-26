@@ -19,3 +19,9 @@ v15 goal/event fix: Goals are generated from Manage Events, cannot be deleted, n
 
 ## v1.12 Meet Mode + Cheer Squad
 Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and custom encouragement messages.
+
+
+## v1.16
+- True two-way per-swim sync using per-record `updatedAt` timestamps.
+- Newest edit wins between phone and laptop for every swim field.
+- Legacy conflicts prefer the current cloud copy so older device-local data cannot undo synced edits.
