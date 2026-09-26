@@ -25,3 +25,12 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - True two-way per-swim sync using per-record `updatedAt` timestamps.
 - Newest edit wins between phone and laptop for every swim field.
 - Legacy conflicts prefer the current cloud copy so older device-local data cannot undo synced edits.
+
+
+## v1.17 — Accounts & Security
+- Supabase email/password login required for the main tracker.
+- Parent/Admin has full read/write access.
+- Athlete account is read-only and limited to Home, Progress, Trophy Room and Meet Mode.
+- Private race videos use short-lived signed URLs; only Admin can upload/delete.
+- Cheer Squad links carry only the meet summary needed by the public cheer page; anonymous users can submit cheers but cannot read tracker tables.
+- Logout and persistent authenticated sessions added.
