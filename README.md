@@ -34,3 +34,9 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Private race videos use short-lived signed URLs; only Admin can upload/delete.
 - Cheer Squad links carry only the meet summary needed by the public cheer page; anonymous users can submit cheers but cannot read tracker tables.
 - Logout and persistent authenticated sessions added.
+
+
+## v1.17.1
+- Fixed private race-video playback for authenticated Parent and Athlete accounts.
+- Recovers Storage paths from legacy public video URLs and requests fresh signed URLs.
+- Refreshes expired login tokens when signing video URLs.

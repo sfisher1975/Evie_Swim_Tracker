@@ -4,7 +4,7 @@
 @media(min-width:900px){body{padding-bottom:0;padding-left:190px}header{padding-left:24px}main{max-width:1120px;padding:24px}nav{top:74px;bottom:0;right:auto;width:190px;height:auto;display:flex;flex-direction:column;border-top:0;border-right:1px solid var(--line);padding:16px 10px;background:#0f141d}nav button{display:flex;align-items:center;gap:12px;text-align:left;font-size:14px;padding:13px 12px;border-radius:10px}nav button.on{background:#17243a}.ico{display:inline;font-size:20px}.event-grid{grid-template-columns:repeat(3,1fr)}.hero{padding:22px}.sheet{max-width:720px}}
 @media(max-width:520px){header h1{font-size:19px}.heroTop{align-items:flex-start}.hero h2{font-size:21px}.goldBtn{padding:10px 12px}.event-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.time{font-size:21px}.sheet{margin:0;min-height:100%;border-radius:0}.modal{padding:0}.modal .sheet{padding:18px 14px 90px}.card{padding:12px}}
 .authGate{position:fixed;z-index:100;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:20px}.authBox{width:min(430px,94vw);background:var(--p);border:1px solid var(--line);border-radius:20px;padding:22px}.authBox img{width:70px;height:70px;border-radius:18px;display:block;margin:0 auto 12px}.authBox h2{text-align:center;margin-bottom:4px}.authBox .small{text-align:center;margin-bottom:16px}.authErr{color:#ff9a9a;font-size:12px;margin-top:10px;text-align:center}.roleTag{display:inline-block;margin-left:8px;border:1px solid #4a5060;border-radius:99px;padding:2px 7px;font-size:10px;color:var(--mut)}.logoutBtn{float:right;padding:5px 9px;font-size:10px}.athleteOnly{display:none}
-</style></head><body><header><h1>Evie Swim Tracker <span class="small">v1.17</span></h1><div class="small" id="headProfile">Evelyn Fisher · PEAQ · Age 12</div><span id="roleTag" class="roleTag" style="display:none"></span><button id="logoutBtn" class="logoutBtn" style="display:none" onclick="logout()">Log out</button></header><main>
+</style></head><body><header><h1>Evie Swim Tracker <span class="small">v1.17.1</span></h1><div class="small" id="headProfile">Evelyn Fisher · PEAQ · Age 12</div><span id="roleTag" class="roleTag" style="display:none"></span><button id="logoutBtn" class="logoutBtn" style="display:none" onclick="logout()">Log out</button></header><main>
 <section id="dashboard" class="page on"><div class="card hero"><div class="heroTop"><div><h2><img src="icon-192.png" alt="" style="width:44px;height:44px;border-radius:12px;vertical-align:middle;margin-right:10px"> <span id="heroName">Evelyn Fisher</span></h2><div class="small"><span id="heroTeam">PEAQ</span> · Age <span id="heroAge">12</span> · Swim progress vault</div></div><button id="addEventBtn" class="goldBtn" onclick="openAdd()">＋ Add Event</button></div></div><h2>Personal Bests</h2><div id="bestGrid" class="event-grid"></div><h2>Recent Swims</h2><div id="recent"></div></section>
 <section id="progress" class="page"><h2>Progress</h2><div class="card"><select id="progressEvent"></select><div id="progressSummary"></div><canvas id="progressChart" class="chart"></canvas><div id="progressMsg" class="small" style="margin-top:8px"></div></div><h3>Times</h3><div id="progressList"></div></section>
 <section id="trophies" class="page"><div id="trophyRoom"></div></section>
@@ -72,8 +72,37 @@ let PENDING_VIDEO_SWIM=null;
 function chooseRaceVideo(id){if(!requireAdmin())return;PENDING_VIDEO_SWIM=id;let inp=$('#raceVideoFile');inp.value='';inp.click()}
 async function uploadRaceVideo(file,id){if(!requireAdmin())return;let s=all().find(x=>x.id===id);if(!s||!file)return;if(!file.type.startsWith('video/')){alert('Please choose a video file.');return}let max=50*1024*1024;if(file.size>max){alert('That video is '+(file.size/1024/1024).toFixed(1)+' MB. Supabase Free allows a maximum of 50 MB per video. Trim or compress it first, then try again.');return}$('#modalBody').innerHTML=`<h2>Uploading Race Video</h2><div class="card"><b>${esc(s.event)} · ${esc(s.time||fmt(s.seconds))}</b><div class="small">${esc(file.name)} · ${(file.size/1024/1024).toFixed(1)} MB</div><div class="uploadProgress">Uploading to Supabase… Keep this page open.</div></div>`;showModal();let ext=(file.name.split('.').pop()||'mp4').replace(/[^a-z0-9]/gi,'').toLowerCase(),path=`${id}/${Date.now()}.${ext}`,u=SUPABASE_URL+'/storage/v1/object/'+VIDEO_BUCKET+'/'+encodeURI(path);try{let r=await fetch(u,{method:'POST',headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+accessToken(),'Content-Type':file.type||'video/mp4','x-upsert':'false'},body:file});if(!r.ok){let msg=await r.text();if(r.status===404||msg.toLowerCase().includes('bucket'))throw new Error('Race video storage is not set up yet. Create the Supabase bucket named race-videos first.');throw new Error('Video upload failed ('+r.status+'). '+msg)}let publicUrl='';if(VIDEO_DELETES[id]?.[path])delete VIDEO_DELETES[id][path];(VIDEOS[id]??=[]).push({path,url:publicUrl,name:file.name,added:new Date().toISOString(),size:file.size,type:file.type});saveLocalOnly();await cloudSave();renderAll();openSwim(id)}catch(e){alert(e.message);openSwim(id)}}
 async function deleteRaceVideo(id,i){if(!requireAdmin())return;let v=VIDEOS[id]?.[i];if(!v||!confirm('Remove this race video?'))return;try{if(v.path){let r=await fetch(SUPABASE_URL+'/storage/v1/object/'+VIDEO_BUCKET+'/'+encodeURI(v.path),{method:'DELETE',headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+accessToken()}});if(!r.ok&&r.status!==404)throw new Error('Could not delete the video from storage ('+r.status+').');(VIDEO_DELETES[id]??={})[v.path]=new Date().toISOString()}VIDEOS[id]=(VIDEOS[id]||[]).filter((x,n)=>n!==i);if(!VIDEOS[id].length)delete VIDEOS[id];saveLocalOnly();renderAll();openSwim(id);await cloudSave();saveLocalOnly();renderAll();openSwim(id)}catch(e){alert(e.message||'Could not remove video.');openSwim(id)}}
-async function signVideo(v){if(!v?.path)return '';try{let r=await fetch(SUPABASE_URL+'/storage/v1/object/sign/'+VIDEO_BUCKET+'/'+encodeURI(v.path),{method:'POST',headers:authHeaders({'Content-Type':'application/json'}),body:JSON.stringify({expiresIn:3600})});let j=await r.json();if(!r.ok)return '';let u=j.signedURL||j.signedUrl||'';return u?(u.startsWith('http')?u:SUPABASE_URL+'/storage/v1'+u):''}catch{return ''}}
-async function prepareVideoUrls(){for(let list of Object.values(VIDEOS))for(let v of (list||[]))v.signedUrl=await signVideo(v);renderAll()}
+function videoStoragePath(v){
+  if(v?.path)return String(v.path).replace(/^\/+/, '');
+  let u=String(v?.url||'');
+  if(!u)return '';
+  try{
+    let x=new URL(u,location.href),m=x.pathname.match(/\/storage\/v1\/object\/(?:public|sign)\/race-videos\/(.+)$/);
+    return m?decodeURIComponent(m[1]):'';
+  }catch{return ''}
+}
+async function signVideo(v,retry=true){
+  let path=videoStoragePath(v);if(!path)return '';
+  if(!v.path)v.path=path;
+  try{
+    let endpoint=SUPABASE_URL+'/storage/v1/object/sign/'+VIDEO_BUCKET+'/'+path.split('/').map(encodeURIComponent).join('/');
+    let r=await fetch(endpoint,{method:'POST',headers:authHeaders({'Content-Type':'application/json'}),body:JSON.stringify({expiresIn:3600}),cache:'no-store'});
+    if(r.status===401&&retry&&await refreshSession())return signVideo(v,false);
+    let j=await r.json().catch(()=>({}));if(!r.ok){console.warn('Could not sign race video',r.status,j);return ''}
+    let u=j.signedURL||j.signedUrl||j.signed_url||'';
+    if(!u)return '';
+    if(u.startsWith('http'))return u;
+    if(u.startsWith('/storage/v1/'))return SUPABASE_URL+u;
+    if(u.startsWith('/object/'))return SUPABASE_URL+'/storage/v1'+u;
+    return SUPABASE_URL+'/storage/v1/'+u.replace(/^\/+/, '');
+  }catch(e){console.warn('Could not sign race video',e);return ''}
+}
+async function prepareVideoUrls(){
+  let changed=false;
+  for(let list of Object.values(VIDEOS))for(let v of (list||[])){let before=v.path||'',path=videoStoragePath(v);if(path&&!v.path){v.path=path;changed=true}v.signedUrl=await signVideo(v)}
+  if(changed)saveLocalOnly();
+  renderAll();
+}
 async function cleanupMissingVideos(){await prepareVideoUrls();return false}
 
 function seedLists(){LISTS.dates=uniq([...(LISTS.dates||[]),...all().map(s=>s.date)]);LISTS.courses=uniq([...(LISTS.courses||[]),...all().map(s=>s.course)]);LISTS.events=uniq([...(LISTS.events||[]),...all().map(s=>s.event)]);LISTS.places=uniq([...(LISTS.places||[]),...all().map(s=>s.place)]);reconcileGoals();saveLocalOnly()}function saveLists(){queueSync()}function opts(a,ph){return `<option value="">${ph}</option>`+a.map(x=>`<option>${esc(x)}</option>`).join('')+`<option value="__add">＋ Add new…</option>`}function strokeFor(e){let z=e.toLowerCase();if(z.includes('free'))return'Freestyle';if(z.includes('back'))return'Backstroke';if(z.includes('breast')||z.includes(' br'))return'Breaststroke';if(z.includes('fly'))return'Butterfly';if(z.includes('im')||z.includes('medley'))return'Individual Medley';return'Other'}function addChoice(id,key,label){let el=$('#'+id);if(el.value!=='__add')return;let v=prompt('Add new '+label+':');if(!v){el.value='';return}v=v.trim();if(!v){el.value='';return}LISTS[key]=uniq([...LISTS[key],v]);saveLists();el.innerHTML=opts(LISTS[key],'Select '+label);el.value=v}
