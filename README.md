@@ -1,3 +1,7 @@
+Evie Swim Tracker v1.21.0 - Open Access
+
+Admin/login gating removed temporarily. Editing and Meet Mode controls are open. Supabase public write policies must be enabled for cloud writes.
+
 Evie Swim Tracker v1.15 - Mobile Progress Sync Fix
 
 Evie Swim Tracker v1.11 - Combined Progress + Times
