@@ -56,3 +56,9 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Finish Meet reviews and commits results to permanent swim history once.
 - Permanent results then participate in PB, standards, achievements and progress calculations.
 - Personal Bests continue to show only the current fastest Official time for each event/course.
+
+
+## v1.18.1 Meet Finish Fix
+- Finished meet results are saved/synced before Meet Mode closes.
+- Finish Meet returns directly to Home without reopening a celebration/modal.
+- Newly committed meet results sort to the top of Recent Swims for their meet date.
