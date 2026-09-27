@@ -73,3 +73,9 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 ## v1.18.3
 - Window/navigation cleanup: Save, Delete, Clear, and nested edit actions now return to the previous app window after completion.
 - Preserves v1.18.2 Meet Mode, security, sync, and private-video behavior.
+
+
+## v1.18.4
+- Added Parent/Admin-only Cancel Meet in Meet Mode.
+- Cancel Meet requires confirmation, discards temporary events/results, removes the unfinished meet from cloud/local active data, and returns Home.
+- Cancelled meet results are never added to permanent swim history.
