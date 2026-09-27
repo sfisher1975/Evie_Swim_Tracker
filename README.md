@@ -49,3 +49,10 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 ## v1.17.2.1 Athlete Meet Mode Fix
 - Fixed the Athlete Meet Mode navigation button so Evie can open Meet Mode read-only.
 - No changes to the working private video playback or security permissions.
+
+## v1.18 Meet Results Workflow
+- Meet Mode results are temporary until Finish Meet.
+- Temporary results can be edited or cleared during the meet.
+- Finish Meet reviews and commits results to permanent swim history once.
+- Permanent results then participate in PB, standards, achievements and progress calculations.
+- Personal Bests continue to show only the current fastest Official time for each event/course.
