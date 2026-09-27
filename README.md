@@ -112,7 +112,7 @@ Compact wave Home redesign. Dark Mode is the default theme. Personal Bests are c
 - Uses an explicit Admin create-meet form and initializes temporary results cleanly.
 - Keeps anonymous viewing read-only and preserves v1.20.0 security behavior.
 
-## v1.20.4 — Meet Admin Session Fix
+## v1.20.5 — Meet Admin Session Fix
 - Admin unlock now stays active for the browser session until Lock is tapped.
 - Meet actions resume after successful Admin Unlock.
 - Create/delete/add/remove/edit/result actions in Meet Mode use the same Admin session check.
