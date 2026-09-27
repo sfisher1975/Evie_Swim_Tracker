@@ -96,3 +96,12 @@ Compact wave Home redesign. Dark Mode is the default theme. Personal Bests are c
 - Gentle modal/sheet entrance transitions.
 - Subtle active-button feedback.
 - Respects the device/browser Reduce Motion preference.
+
+## v1.20.0 — Read Only by Default / Admin Unlock
+- No login is required to open and browse the tracker.
+- Anonymous visitors are read-only.
+- Protected actions prompt for Admin Unlock.
+- A successful admin sign-in unlocks editing for the session.
+- The header shows `Read Only` or `Admin Mode`; tap Lock to return to read-only.
+- Theme/personalization remains available in read-only mode.
+- Before deploying, run `SUPABASE_V1.20_READ_ONLY_SETUP.sql` once in the Supabase SQL Editor so anonymous read access works with RLS.
