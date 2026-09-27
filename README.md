@@ -79,3 +79,8 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Added Parent/Admin-only Cancel Meet in Meet Mode.
 - Cancel Meet requires confirmation, discards temporary events/results, removes the unfinished meet from cloud/local active data, and returns Home.
 - Cancelled meet results are never added to permanent swim history.
+
+## v1.19.0 — Themes & Personalization
+- Added a Personalize palette button available to Parent/Admin and Athlete accounts.
+- Added 10 selectable themes: Classic Blue, Electric Aqua, Championship, Neon Performance, Race Day, Purple Splash, Coral Current, Midnight, Crimson, and Ocean.
+- Theme preference is stored per signed-in account on the device and does not modify swim data.
