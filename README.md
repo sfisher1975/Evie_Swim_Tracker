@@ -84,3 +84,7 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Added a Personalize palette button available to Parent/Admin and Athlete accounts.
 - Added 10 selectable themes: Classic Blue, Electric Aqua, Championship, Neon Performance, Race Day, Purple Splash, Coral Current, Midnight, Crimson, and Ocean.
 - Theme preference is stored per signed-in account on the device and does not modify swim data.
+
+
+## v1.19.4
+Compact wave Home redesign. Dark Mode is the default theme. Personal Bests are consolidated into one panel, Recent Swims is renamed Events, and the Next Goal panel is not shown on Home.
