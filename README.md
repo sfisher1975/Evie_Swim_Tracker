@@ -68,3 +68,8 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Fixed Finish Meet cloud sync crash caused by legacy Times-page rendering code reading controls that no longer exist.
 - Finish Meet now commits locally, syncs tracker and meet data, then closes Meet Mode and returns Home.
 - No security, video, or permission changes.
+
+
+## v1.18.3
+- Window/navigation cleanup: Save, Delete, Clear, and nested edit actions now return to the previous app window after completion.
+- Preserves v1.18.2 Meet Mode, security, sync, and private-video behavior.
