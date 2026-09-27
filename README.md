@@ -86,5 +86,13 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Theme preference is stored per signed-in account on the device and does not modify swim data.
 
 
-## v1.19.4
+## v1.19.5
 Compact wave Home redesign. Dark Mode is the default theme. Personal Bests are consolidated into one panel, Recent Swims is renamed Events, and the Next Goal panel is not shown on Home.
+
+
+## v1.19.5 polish
+- Softer rounded panels, rows, controls, and navigation.
+- Fast fade/slide transitions between main screens.
+- Gentle modal/sheet entrance transitions.
+- Subtle active-button feedback.
+- Respects the device/browser Reduce Motion preference.
