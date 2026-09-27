@@ -62,3 +62,9 @@ Adds morning-of meet setup, event result entry, shareable Cheer Squad links, and
 - Finished meet results are saved/synced before Meet Mode closes.
 - Finish Meet returns directly to Home without reopening a celebration/modal.
 - Newly committed meet results sort to the top of Recent Swims for their meet date.
+
+
+## v1.18.2
+- Fixed Finish Meet cloud sync crash caused by legacy Times-page rendering code reading controls that no longer exist.
+- Finish Meet now commits locally, syncs tracker and meet data, then closes Meet Mode and returns Home.
+- No security, video, or permission changes.
