@@ -122,6 +122,9 @@ Compact wave Home redesign. Dark Mode is the default theme. Personal Bests are c
 - Create/delete/add/remove/edit/result actions in Meet Mode use the same Admin session check.
 - No Supabase policy changes required.
 
-
-## v1.22.1 Professional Sports UI Prototype
-Visual-only redesign layer. No intended data, sync, meet, PB, goal, or video logic changes.
+## v1.23.1 Meet + Cheer verification
+- Generic sample meet labels display as “Meet” rather than “Test Meet”.
+- Cheer Squad share links remain public.
+- Shared Cheer Squad page now reads the live meet record and shows entered event times.
+- Shared times refresh automatically every 15 seconds.
+- Family/friends can still send encouragement messages back to Meet Mode.
