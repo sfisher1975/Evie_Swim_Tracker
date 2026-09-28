@@ -1,7 +1,3 @@
-Evie Swim Tracker v1.22.0 - Professional Visual Refresh
-
-Visual-only refresh built from the working v1.21.2 baseline. No swim, meet, sync, database, PB, goal, or video logic intentionally changed.
-
 Evie Swim Tracker v1.21.0 - Open Access
 
 Admin/login gating removed temporarily. Editing and Meet Mode controls are open. Supabase public write policies must be enabled for cloud writes.
@@ -125,3 +121,7 @@ Compact wave Home redesign. Dark Mode is the default theme. Personal Bests are c
 - Meet actions resume after successful Admin Unlock.
 - Create/delete/add/remove/edit/result actions in Meet Mode use the same Admin session check.
 - No Supabase policy changes required.
+
+
+## v1.22.1 Professional Sports UI Prototype
+Visual-only redesign layer. No intended data, sync, meet, PB, goal, or video logic changes.
